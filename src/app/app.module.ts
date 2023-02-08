@@ -40,6 +40,7 @@ import { DropdownDirectiveDirective } from './dropdown-directive.directive';
     AppRoutingModule,
     FormsModule 
   ],
+  // getContacts():[],
   providers: [],
   bootstrap: [AppComponent]
 })

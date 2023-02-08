@@ -7,5 +7,11 @@ import { Contact } from '../contact.model';
   styleUrls: ['./contact-item.component.css']
 })
 export class ContactItemComponent {
-  @Input() contact = { name: '', imageUrl: '' }
+  @Input() contact = {name:'', imageUrl:''}
+  
+  constructor(){}
+  ngOnInit(): void{}
+  
+  
+  
   }
