@@ -10,6 +10,7 @@ import { ContactService} from './contact.service';
 export class ContactsComponent implements OnInit{
   //object to sel!ect contact 
   selectedContact!: Contact;
+  
   constructor(private contactService: ContactService){};
 
   ngOnInit(): void {

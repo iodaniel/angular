@@ -6,14 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'cms';
-  selectedFeature!: string;
+  title = 'WeLearn CMS';
+  // selectedFeature!: string;
 
-  switchView(selectedFeature: string){
-    if(this.selectedFeature?.toUpperCase() !== selectedFeature.toUpperCase()){
-      this.selectedFeature = selectedFeature;
-    }
+  // switchView(selectedFeature: string){
+  //   if(this.selectedFeature?.toUpperCase() !== selectedFeature.toUpperCase()){
+  //     this.selectedFeature = selectedFeature;
+  //   }
 
-  }
+  //}
 
 }

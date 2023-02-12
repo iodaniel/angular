@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+// import {Routes, RouterModule} from "@angular/router";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,27 @@ import { MessageItemComponent } from './messages/message-item/message-item.compo
 import { MessageEditComponent } from './messages/message-edit/message-edit.component';
 import { MessageListComponent } from './messages/message-list/message-list.component';
 import { DropdownDirectiveDirective } from './dropdown-directive.directive';
+import { DocumentEditComponent } from './documents/document-edit/document-edit.component';
+import { ContactEditComponent } from './contacts/contact-edit/contact-edit.component';
+
+
+// const appRoutes: Routes = [
+//   {path: '', component:DocumentsComponent},
+//   {path: 'contacts', component:ContactsComponent, },
+//     // children:[
+//     //   {
+//     //     path:'new',
+//     //     component:DocumentItemComponent
+//     //   },
+//     //   {
+//     //     path:':id',
+//     //     component:DocumentDetailComponent
+//     //   },{
+//     //     path:'id/edit', 
+//     //     component:DocumentEditComponent
+//     //   }]},
+//   {path: 'messages', component:MessageItemComponent},
+// ]
 
 @NgModule({
   declarations: [
@@ -33,7 +55,9 @@ import { DropdownDirectiveDirective } from './dropdown-directive.directive';
     MessageItemComponent,
     MessageEditComponent,
     MessageListComponent,
-    DropdownDirectiveDirective
+    DropdownDirectiveDirective,
+    DocumentEditComponent,
+    ContactEditComponent,
   ],
   imports: [
     BrowserModule,

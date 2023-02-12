@@ -10,8 +10,8 @@
           <img [src]="contact.imageUrl" [alt]="contact.name" height="90px" />
         </div>
         <div class="col-xs-6 vcenter">
-          <button class="btn btn-primary btn-sm" type="button">Edit</button>
-          <button class="btn btn-danger btn-sm" type="button">Delete</button>
+          <button class="btn btn-primary btn-sm" type="button" routerLink="edit">Edit</button>
+          <button class="btn btn-danger btn-sm" type="button" (click)="onDelete()">Delete</button>
         </div>
       </div>
     </div>
