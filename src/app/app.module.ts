@@ -20,7 +20,7 @@ import { MessageListComponent } from './messages/message-list/message-list.compo
 import { DropdownDirectiveDirective } from './dropdown-directive.directive';
 import { DocumentEditComponent } from './documents/document-edit/document-edit.component';
 import { ContactEditComponent } from './contacts/contact-edit/contact-edit.component';
-
+import { DndModule } from 'ng2-dnd';
 
 // const appRoutes: Routes = [
 //   {path: '', component:DocumentsComponent},
@@ -62,7 +62,10 @@ import { ContactEditComponent } from './contacts/contact-edit/contact-edit.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule 
+    FormsModule, 
+    DndModule.forRoot(),
+    // routing
+     
   ],
   // getContacts():[],
   providers: [],
