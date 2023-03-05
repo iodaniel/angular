@@ -13,6 +13,7 @@ import { Subscription } from 'rxjs';
 export class ContactListComponent implements OnInit{
   contacts: Contact[]=[];//to inject the data
   subscription!: Subscription;
+  term:string = '';
 
   constructor(private contactService: ContactService){}
 //constructor for the service  
@@ -27,7 +28,9 @@ export class ContactListComponent implements OnInit{
   ndOnDestroy(): void{
     this.subscription.unsubscribe();
   }
-  
+  search(value: string){
+    this.term= value;
+  }
   // @Output() selectedContactEvent = new EventEmitter<Contact>();
 
 }

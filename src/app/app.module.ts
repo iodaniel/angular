@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 // import {Routes, RouterModule} from "@angular/router";
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,6 +22,8 @@ import { DropdownDirectiveDirective } from './dropdown-directive.directive';
 import { DocumentEditComponent } from './documents/document-edit/document-edit.component';
 import { ContactEditComponent } from './contacts/contact-edit/contact-edit.component';
 import { DndModule } from 'ng2-dnd';
+import { ContactsFilterPipe } from './contacts/contacts-filter.pipe';
+
 
 // const appRoutes: Routes = [
 //   {path: '', component:DocumentsComponent},
@@ -58,12 +61,15 @@ import { DndModule } from 'ng2-dnd';
     DropdownDirectiveDirective,
     DocumentEditComponent,
     ContactEditComponent,
+    ContactsFilterPipe,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule, 
     DndModule.forRoot(),
+    HttpClientModule,
     // routing
      
   ],
