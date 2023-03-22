@@ -25,11 +25,11 @@
             <input
               type="text"
               id="description"
-              name="description"
-              [ngModel]="document?.description"
               class="form-control"
               size="120"
               max="255"
+              [ngModel]="document.description"
+              name="description"
               required
               #description="ngModel">
           </div>

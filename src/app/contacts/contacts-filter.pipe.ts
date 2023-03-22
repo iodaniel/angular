@@ -9,17 +9,18 @@ export class ContactsFilterPipe implements PipeTransform {
 
   transform(contacts:Contact[], term: string): any {
     let filteredArray: Contact[]=[];
-      for(let i=0; i<contacts.length; i++){
-        let contact = contacts[i];
-        if (contact.name.toLowerCase().includes(term)){
-          filteredArray.push(contact);
-        }
+    for(let i=0; i<contacts.length; i++){
+      let contact = contacts[i];
+     
+      if (contact.name.toLowerCase().includes(term)){
+        filteredArray.push(contact);
       }
+        }
     if(filteredArray.length < 1){
       return contacts;
     }
-
     return filteredArray;
   }
+  
 
 } 

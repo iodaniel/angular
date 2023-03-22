@@ -12,7 +12,7 @@ const router = express.Router();
 //     res.send("Hello from express!");
 // });
 router.get('/', function(req, res, next){
-    res.render('index', {title: 'CMS'});
+    res.sendFile(paht.join(__dirname, 'dist/cms/index.html'));
 });
 
 module.exports = router;

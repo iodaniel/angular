@@ -28,7 +28,8 @@ documents: Document[]=[];
   // @Output() selectedContactEvent = new EventEmitter<Document>();
   
   ngOnInit(): void {
-    this.documents = this.documentService.getDocuments();
+   //this.documents = this.documentService.getDocuments();
+   this.documentService.getDocuments();
     this.subscription = this.documentService.documentListChangedEvent.subscribe( 
       (documents: Document[]) => {
       this.documents = documents;
